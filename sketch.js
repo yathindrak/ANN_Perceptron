@@ -18,7 +18,7 @@ const learningRate = 0.001;
 // num of inputs with bias
 const numOfInputs = 3; // -> 2 inputs(x,y for each point) + bias -> 3
 
-// bias value should be 1
+// bias value should be 1 - (otherwise if inputs are zero. weighted sum will be zero. That is wrong)
 const bias = 1;
 
 // The function to describe a line -> y = mx + c

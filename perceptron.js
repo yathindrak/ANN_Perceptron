@@ -30,6 +30,7 @@ class Perceptron {
   feedforward(inputs) {
     // Sum all values
     let sum = 0;
+    // get the weighted sum
     for (let i = 0; i < this.weights.length; i++) {
       sum += inputs[i] * this.weights[i];
     }
